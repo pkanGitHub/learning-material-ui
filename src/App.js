@@ -1,15 +1,16 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom'
-// import logo from './logo.svg';
-import './App.css';
-import Home from './components/About'
+import NavBar from './components/layout/NavBar';
+import Home from './components/home/Home'
+
 
 const App = () => {
   return (
     <div>
-      <Route exact path="/" component={Home} />
-      {/* <Route exact path="" component={} />
-      <Route exact path="" component={} /> */}
+      <NavBar />
+      <Switch>
+        <Route exact path="/" component={Home} />
+      </Switch>
     </div>
   )
 }
