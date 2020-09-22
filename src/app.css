@@ -1,5 +1,8 @@
-/* .page-container {
+.container-bg {
     display: flex;
-    justify-content: center;
-    background: ' #a8dadc'
-} */
+    flex-direction: column;
+}
+
+.bgColor {
+    background-color: #ebeff5;
+}
