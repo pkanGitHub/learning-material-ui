@@ -8,7 +8,6 @@ import useMediaQuery from "@material-ui/core/useMediaQuery";
 import { withRouter } from "react-router-dom";
 // import useStyles from './PageStyles'
 
-
 const useStyles = makeStyles(theme => ({
     root: {
         flexGrow: 1
@@ -20,7 +19,9 @@ const useStyles = makeStyles(theme => ({
         [theme.breakpoints.down("xs")]: {
             flexGrow: 1
         },
-        marginRight: "100px"
+        marginRight: "100px",
+        position: "absolute",
+        left: "100px"
     },
     menuBarOptions: {
         display: "flex",
@@ -104,7 +105,7 @@ const MenuBar = props => {
 
     return (
         <div className={classes.root}>
-            <AppBar position="static">
+            <AppBar position="static" style={{ backgroundColor: '#0C120C' }}>
                 <Toolbar className={classes.header}>
                     <Typography variant="h6" className={classes.title}>
                         PK
